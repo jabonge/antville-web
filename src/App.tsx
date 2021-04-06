@@ -1,9 +1,13 @@
 import React from 'react'
 import { Global, css } from '@emotion/react'
+import Header from './components/Header'
+import Routes from './Routes'
 
 function App() {
   return (
     <>
+      <Header />
+      <Routes />
       <Global styles={globalStyle} />
     </>
   )
