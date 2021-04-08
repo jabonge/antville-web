@@ -1,6 +1,6 @@
 import * as React from 'react'
 
-function Logo(props) {
+function Logo(props: any) {
   return (
     <svg width={21} height={20} fill="none" {...props}>
       <path fill="url(#Logo__pattern0)" d="M0 0h21v20H0z" />

@@ -1,21 +1,21 @@
 import { css } from '@emotion/react'
+import emotionReset from 'emotion-reset'
 
 const globalStyle = css`
-  html,
-  body,
-  #root {
-    height: 100%;
-  }
-  html {
-    box-sizing: border-box;
+  ${emotionReset}
 
-    * {
-      box-sizing: inherit;
-    }
-    h1 {
-      font-size: 48px;
-      font-weight: bold;
-    }
+  *,
+  *::after,
+  *::before {
+    box-sizing: border-box;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    font-smoothing: antialiased;
+  }
+
+  h1 {
+    font-size: 48px;
+    font-weight: bold;
   }
 `
 
